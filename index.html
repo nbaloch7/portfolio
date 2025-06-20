@@ -16,7 +16,7 @@
 
     header {
       background: linear-gradient(135deg, #0077cc, #004a99);
-      padding: 1rem 0.7rem;
+      padding: 2rem 1rem 1rem;
       color: #fff;
       text-align: center;
     }
@@ -24,29 +24,34 @@
     .header-content {
       display: inline-flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
       flex-wrap: wrap;
       justify-content: center;
     }
 
     .header-content img {
-      width: 90px;
-      height: 90px;
-      border-radius: 40%;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
       object-fit: cover;
       border: 2px solid #fff;
     }
 
     .header-content h1 {
-      font-size: 2.6rem;
+      font-size: 2.2rem;
       margin: 0;
-      color: #fff;
     }
 
     header p {
-      font-size: 1.7rem;
-      opacity: 0.7;
-      margin-top: 0.4rem;
+      font-size: 1.05rem;
+      margin-top: 0.3rem;
+      opacity: 0.9;
+    }
+
+    .email {
+      font-size: 0.95rem;
+      margin-top: 0.2rem;
+      opacity: 0.8;
     }
 
     .intro {
@@ -70,17 +75,26 @@
 
     .site {
       background: #fff;
-      border-radius: 12px;
+      border-radius: 10px;
       overflow: hidden;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      border: 2px solid #0077cc;
       display: flex;
       flex-direction: column;
       transition: transform 0.3s, box-shadow 0.3s;
     }
 
     .site:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      transform: translateY(-4px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    }
+
+    .site-title {
+      background: #0077cc;
+      color: #fff;
+      padding: 0.5rem;
+      font-weight: 600;
+      font-size: 1.05rem;
+      text-align: center;
     }
 
     .preview {
@@ -94,12 +108,6 @@
     .content {
       padding: 1rem;
       text-align: center;
-    }
-
-    .content h2 {
-      margin: 0.5rem 0;
-      font-size: 1.2rem;
-      color: #0077cc;
     }
 
     .btn {
@@ -136,6 +144,7 @@
       <h1>NOOR'S PORTFOLIO</h1>
     </div>
     <p>WordPress Developer | SEO Expert | Digital Marketer</p>
+    <div class="email">📧 noorbaloch70@gmail.com</div>
   </header>
 
   <section class="intro">
@@ -144,104 +153,105 @@
   </section>
 
   <section class="portfolio">
-    <!-- KEEPING YOUR EXISTING PORTFOLIO CONTENT -->
-    <!-- Sites with live iframe previews -->
+
+    <!-- Working iframe previews -->
     <div class="site">
+      <div class="site-title">Build Africa SA</div>
       <iframe class="preview" src="https://buildafricasa.co.za"></iframe>
       <div class="content">
-        <h2>Build Africa SA</h2>
         <a class="btn" href="https://buildafricasa.co.za" target="_blank">Visit Website</a>
       </div>
     </div>
 
     <div class="site">
+      <div class="site-title">La Orchard Guesthouse</div>
       <iframe class="preview" src="https://laorchard.co.za/"></iframe>
       <div class="content">
-        <h2>La Orchard Guesthouse</h2>
         <a class="btn" href="https://laorchard.co.za/" target="_blank">Visit Website</a>
       </div>
     </div>
 
     <div class="site">
+      <div class="site-title">Houghton Guesthouse</div>
       <iframe class="preview" src="https://houghtonguesthouse.co.za/"></iframe>
       <div class="content">
-        <h2>Houghton Guesthouse</h2>
         <a class="btn" href="https://houghtonguesthouse.co.za/" target="_blank">Visit Website</a>
       </div>
     </div>
 
     <div class="site">
+      <div class="site-title">Businessburg Hotel</div>
       <iframe class="preview" src="https://businessburghotel.co.za/"></iframe>
       <div class="content">
-        <h2>Businessburg Hotel</h2>
         <a class="btn" href="https://businessburghotel.co.za/" target="_blank">Visit Website</a>
       </div>
     </div>
 
     <div class="site">
+      <div class="site-title">Canvas Wholesale UK</div>
       <iframe class="preview" src="https://www.canvaswholesale.co.uk/"></iframe>
       <div class="content">
-        <h2>Canvas Wholesale UK</h2>
         <a class="btn" href="https://www.canvaswholesale.co.uk/" target="_blank">Visit Website</a>
       </div>
     </div>
 
     <div class="site">
+      <div class="site-title">Home 2 Home Movers</div>
       <iframe class="preview" src="https://home2homemovers.co.uk"></iframe>
       <div class="content">
-        <h2>Home 2 Home Movers</h2>
         <a class="btn" href="https://home2homemovers.co.uk" target="_blank">Visit Website</a>
       </div>
     </div>
 
     <div class="site">
+      <div class="site-title">Aquatek Plumbing & Heating</div>
       <iframe class="preview" src="https://www.aquatek.info/"></iframe>
       <div class="content">
-        <h2>Aquatek Plumbing & Heating</h2>
         <a class="btn" href="https://www.aquatek.info/" target="_blank">Visit Website</a>
       </div>
     </div>
 
-    <!-- Sites using provided images as homepage previews -->
+    <!-- Magento sites with placeholder preview -->
     <div class="site">
-      <img class="preview" src="https://www.banyo.co.uk/media/logo/stores/3/logobanyo_1.png" alt="Banyo UK Homepage Screenshot">
+      <div class="site-title">Banyo UK</div>
+      <img class="preview" src="https://via.placeholder.com/400x200.png?text=Banyo+Homepage" alt="Banyo UK Homepage Screenshot">
       <div class="content">
-        <h2>Banyo UK</h2>
         <a class="btn" href="https://banyo.co.uk" target="_blank">Visit Website</a>
       </div>
     </div>
 
     <div class="site">
-      <img class="preview" src="https://nexus-home.com/media/logo/stores/1/logo_new.png" alt="Nexus Home Homepage Screenshot">
+      <div class="site-title">Nexus Home</div>
+      <img class="preview" src="https://via.placeholder.com/400x200.png?text=Nexus+Home" alt="Nexus Home Homepage Screenshot">
       <div class="content">
-        <h2>Nexus Home</h2>
         <a class="btn" href="https://nexus-home.com/" target="_blank">Visit Website</a>
       </div>
     </div>
 
     <div class="site">
+      <div class="site-title">ExamAunty</div>
       <img class="preview" src="https://examaunty.com/wp-content/uploads/2024/10/cropped-MCQsQuiz-icon.png" alt="ExamAunty Homepage Screenshot">
       <div class="content">
-        <h2>ExamAunty</h2>
         <a class="btn" href="https://examaunty.com" target="_blank">Visit Website</a>
       </div>
     </div>
 
     <div class="site">
+      <div class="site-title">MCQs Quiz</div>
       <img class="preview" src="https://mcqsquiz.org/wp-content/uploads/2024/07/cropped-cropped-MCQs-Quiz-logo.png" alt="MCQs Quiz Homepage Screenshot">
       <div class="content">
-        <h2>MCQs Quiz</h2>
         <a class="btn" href="https://mcqsquiz.org" target="_blank">Visit Website</a>
       </div>
     </div>
 
     <div class="site">
+      <div class="site-title">NearJobs.pk</div>
       <img class="preview" src="https://nearjobs.pk/wp-content/uploads/2024/08/cropped-near-jobs.png" alt="NearJobs.pk Homepage Screenshot">
       <div class="content">
-        <h2>NearJobs.pk</h2>
         <a class="btn" href="https://nearjobs.pk" target="_blank">Visit Website</a>
       </div>
     </div>
+
   </section>
 
   <footer>
