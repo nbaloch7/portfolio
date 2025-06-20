@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noor's Portfolio - Live Projects</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f7fa;
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0077cc, #004a99);
+      padding: 1rem 0.7rem;
+      color: #fff;
+      text-align: center;
+    }
+
+    .header-content {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .header-content img {
+      width: 90px;
+      height: 90px;
+      border-radius: 40%;
+      object-fit: cover;
+      border: 2px solid #fff;
+    }
+
+    .header-content h1 {
+      font-size: 2.6rem;
+      margin: 0;
+      color: #fff;
+    }
+
+    header p {
+      font-size: 1.7rem;
+      opacity: 0.7;
+      margin-top: 0.4rem;
+    }
+
+    .intro {
+      max-width: 900px;
+      margin: 1rem auto;
+      padding: 0 1rem;
+      text-align: center;
+      color: #333;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      padding: 2rem;
+      max-width: 1300px;
+      margin: auto;
+    }
+
+    .site {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .site:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .preview {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      background: #fff;
+      border: none;
+    }
+
+    .content {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .content h2 {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+      color: #0077cc;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.5rem 1.2rem;
+      background-color: #0077cc;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #005fa3;
+    }
+
+    footer {
+      background-color: #004a99;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <img src="https://mcqsquiz.org/wp-content/uploads/2025/06/n.jpeg" alt="Noor Profile Image">
+      <h1>NOOR'S PORTFOLIO</h1>
+    </div>
+    <p>WordPress Developer | SEO Expert | Digital Marketer</p>
+  </header>
+
+  <section class="intro">
+    <p>I have <strong>10+ years of experience</strong> in <strong>website development</strong>, <strong>SEO</strong>, and
+      <strong>digital marketing</strong>. I build powerful online platforms and strategies that help businesses grow online.</p>
+  </section>
+
+  <section class="portfolio">
+    <!-- KEEPING YOUR EXISTING PORTFOLIO CONTENT -->
+    <!-- Sites with live iframe previews -->
+    <div class="site">
+      <iframe class="preview" src="https://buildafricasa.co.za"></iframe>
+      <div class="content">
+        <h2>Build Africa SA</h2>
+        <a class="btn" href="https://buildafricasa.co.za" target="_blank">Visit Website</a>
+      </div>
+    </div>
+
+    <div class="site">
+      <iframe class="preview" src="https://laorchard.co.za/"></iframe>
+      <div class="content">
+        <h2>La Orchard Guesthouse</h2>
+        <a class="btn" href="https://laorchard.co.za/" target="_blank">Visit Website</a>
+      </div>
+    </div>
+
+    <div class="site">
+      <iframe class="preview" src="https://houghtonguesthouse.co.za/"></iframe>
+      <div class="content">
+        <h2>Houghton Guesthouse</h2>
+        <a class="btn" href="https://houghtonguesthouse.co.za/" target="_blank">Visit Website</a>
+      </div>
+    </div>
+
+    <div class="site">
+      <iframe class="preview" src="https://businessburghotel.co.za/"></iframe>
+      <div class="content">
+        <h2>Businessburg Hotel</h2>
+        <a class="btn" href="https://businessburghotel.co.za/" target="_blank">Visit Website</a>
+      </div>
+    </div>
+
+    <div class="site">
+      <iframe class="preview" src="https://www.canvaswholesale.co.uk/"></iframe>
+      <div class="content">
+        <h2>Canvas Wholesale UK</h2>
+        <a class="btn" href="https://www.canvaswholesale.co.uk/" target="_blank">Visit Website</a>
+      </div>
+    </div>
+
+    <div class="site">
+      <iframe class="preview" src="https://home2homemovers.co.uk"></iframe>
+      <div class="content">
+        <h2>Home 2 Home Movers</h2>
+        <a class="btn" href="https://home2homemovers.co.uk" target="_blank">Visit Website</a>
+      </div>
+    </div>
+
+    <div class="site">
+      <iframe class="preview" src="https://www.aquatek.info/"></iframe>
+      <div class="content">
+        <h2>Aquatek Plumbing & Heating</h2>
+        <a class="btn" href="https://www.aquatek.info/" target="_blank">Visit Website</a>
+      </div>
+    </div>
+
+    <!-- Sites using provided images as homepage previews -->
+    <div class="site">
+      <img class="preview" src="https://www.banyo.co.uk/media/logo/stores/3/logobanyo_1.png" alt="Banyo UK Homepage Screenshot">
+      <div class="content">
+        <h2>Banyo UK</h2>
+        <a class="btn" href="https://banyo.co.uk" target="_blank">Visit Website</a>
+      </div>
+    </div>
+
+    <div class="site">
+      <img class="preview" src="https://nexus-home.com/media/logo/stores/1/logo_new.png" alt="Nexus Home Homepage Screenshot">
+      <div class="content">
+        <h2>Nexus Home</h2>
+        <a class="btn" href="https://nexus-home.com/" target="_blank">Visit Website</a>
+      </div>
+    </div>
+
+    <div class="site">
+      <img class="preview" src="https://examaunty.com/wp-content/uploads/2024/10/cropped-MCQsQuiz-icon.png" alt="ExamAunty Homepage Screenshot">
+      <div class="content">
+        <h2>ExamAunty</h2>
+        <a class="btn" href="https://examaunty.com" target="_blank">Visit Website</a>
+      </div>
+    </div>
+
+    <div class="site">
+      <img class="preview" src="https://mcqsquiz.org/wp-content/uploads/2024/07/cropped-cropped-MCQs-Quiz-logo.png" alt="MCQs Quiz Homepage Screenshot">
+      <div class="content">
+        <h2>MCQs Quiz</h2>
+        <a class="btn" href="https://mcqsquiz.org" target="_blank">Visit Website</a>
+      </div>
+    </div>
+
+    <div class="site">
+      <img class="preview" src="https://nearjobs.pk/wp-content/uploads/2024/08/cropped-near-jobs.png" alt="NearJobs.pk Homepage Screenshot">
+      <div class="content">
+        <h2>NearJobs.pk</h2>
+        <a class="btn" href="https://nearjobs.pk" target="_blank">Visit Website</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Noor — Website Developer | SEO Expert | Digital Marketer
+  </footer>
+</body>
+
+</html>
